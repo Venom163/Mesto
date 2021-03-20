@@ -2,7 +2,7 @@ const popup = document.querySelector('.popup');
 const profileEditBtn = document.querySelector('.profile__edit-button');
 const popupCloseBtn = document.querySelector('.popup__close-button');
 const popupOverLay = document.querySelector('.popup__overlay');
-const likes = document.querySelectorAll('.element__footer-button');
+const likes = document.querySelectorAll('.elements__footer-button');
 let formElement = document.querySelector('.popup__form');
 let nameInput = document.querySelector('.popup__form-input_type_name');
 let jobInput = document.querySelector('.popup__form-input_type_job');
@@ -18,7 +18,7 @@ function closePopup (evt) {
 
 
 function likeChange() {
-	this.classList.toggle('element__footer-button_active');    // Функция тыкания сердечек
+	this.classList.toggle('elements__footer-button_active');    // Функция тыкания сердечек
 }
 
 for (let i = 0; i < likes.length; i++) {

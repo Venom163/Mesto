@@ -19,12 +19,12 @@
 
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/elements/__lists/elements__lists.css);
-@import url(../blocks/elements/__list-item/element__list-item.css);
-@import url(../blocks/elements/__img/element__img.css);
-@import url(../blocks/elements/__footer/element__footer.css);
-@import url(../blocks/elements/__footer-title/element__footer-title.css);
-@import url(../blocks/elements/__footer-button/element__footer-button.css);
-@import url(../blocks/elements/__footer-button/_active/element__footer-button_active.css);
+@import url(../blocks/elements/__list-item/elements__list-item.css);
+@import url(../blocks/elements/__img/elements__img.css);
+@import url(../blocks/elements/__footer/elements__footer.css);
+@import url(../blocks/elements/__footer-title/elements__footer-title.css);
+@import url(../blocks/elements/__footer-button/elements__footer-button.css);
+@import url(../blocks/elements/__footer-button/_active/elements__footer-button_active.css);
 
 
 

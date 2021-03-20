@@ -1,4 +1,4 @@
-.element__list-item {
+.elements__list-item {
     display: flex;
     flex-direction: column;
 }
