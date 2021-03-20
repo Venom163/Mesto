@@ -1,0 +1,16 @@
+.element__footer-button {
+    background: transparent url(../../../images/Like.svg);
+    width: 22px;
+    height: 19px;
+    border: none;
+    background-color: #fff;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+.element__footer-button:hover {
+    opacity: .5;
+}

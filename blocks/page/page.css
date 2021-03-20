@@ -1,0 +1,14 @@
+.page {
+    font-family: "Inter", "Arial", sans-serif;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    max-width: 1280px;
+    background-color: #000000;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 340px) {
+
+}
