@@ -1,10 +1,10 @@
 .popup__content {
-    position: fixed;
-    top: 200px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #fff;
     width: 430px;
-    background-color: #fff;
-    left: 50%;
-    transform: translateX(-50%);
     border-radius: 10px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;

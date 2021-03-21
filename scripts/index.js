@@ -1,7 +1,6 @@
 const popup = document.querySelector('.popup');
 const profileEditBtn = document.querySelector('.profile__edit-button');
 const popupCloseBtn = document.querySelector('.popup__close-button');
-const popupOverLay = document.querySelector('.popup__overlay');
 const likes = document.querySelectorAll('.elements__footer-button');
 let formElement = document.querySelector('.popup__form');
 let nameInput = document.querySelector('.popup__form-input_type_name');
@@ -10,11 +9,31 @@ let profileName = document.querySelector('.profile__name');
 let profileJob = document.querySelector('.profile__job');
 
 
-function closePopup (evt) {
-    if (evt.target === popupOverLay || evt.target === popupCloseBtn) {  //Функция закрытия попапа при клике на кнопку крестика и оверлея
-        popup.classList.remove('popup_visible');
-    }    
+
+
+function closePopup () {
+    popup.classList.remove('popup_visible');              // закрытие попапа по клопке
 }
+popupCloseBtn.addEventListener('click', closePopup);
+
+
+
+const closeByOverlay = (evt, popup) => { // Фунцкия закрытия по оверлэй
+    if (evt.target.classList.contains('popup')) {
+      closePopup(popup);
+    }
+}
+popup.addEventListener ('click', function (evt) {
+    closeByOverlay(evt, popup )
+})
+
+
+
+function openPopup() {
+    popup.classList.add('popup_visible');     // Открытие попапа
+}
+profileEditBtn.addEventListener('click', openPopup);
+
 
 
 function likeChange() {
@@ -26,9 +45,7 @@ for (let i = 0; i < likes.length; i++) {
 }
 
 
-function openPopup() {
-    popup.classList.add('popup_visible');     // Открытие попапа
-}
+
 
 
 function formSubmitHandler (evt) {
@@ -39,8 +56,7 @@ function formSubmitHandler (evt) {
 }
 
 
-profileEditBtn.addEventListener('click', openPopup);
-popupOverLay.addEventListener('click', closePopup);
+
 formElement.addEventListener('submit', formSubmitHandler);
 
 
