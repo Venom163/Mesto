@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 520px) {
     .popup__content {
-        width: 350px;
+        max-width: 350px;
         padding: 17px 18px 18px;
     }
 }
@@ -23,13 +23,13 @@
 
 @media screen and (max-width: 460px) {
     .popup__content {
-        width: 300px;
+        max-width: 300px;
     }
 }
 
 
 @media screen and (max-width: 380px) {
     .popup__content {
-        width: 240px;
+        max-width: 280px;
     }
 }

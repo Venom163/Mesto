@@ -25,5 +25,7 @@
 @media screen and (max-width: 500px) {
     .popup__tokeep {
         margin-top: 28px;
+        font-size: 14px;
+        line-height: 17px;
     }
 }
