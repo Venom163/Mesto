@@ -31,15 +31,6 @@ function formSubmitHandler (evt) {
 }
 
 
-function likeChange() {
-	this.classList.toggle('elements__footer-button_active');    // Функция тыкания сердечек я не на чё не намекаю , 
-}                                                                //   3 состояния для кнопки лайка , тут я подумал наверно через js реализовать , а как тогда надо было?
-                                                                // https://prnt.sc/10si3rv это ссылка фото с фигмы
-
-for (let i = 0; i < likes.length; i++) {
-	likes[i].addEventListener('click', likeChange);
-}
-
 
 
 popupCloseBtn.addEventListener('click', closePopup);
@@ -53,15 +44,6 @@ formElement.addEventListener('submit', formSubmitHandler);
 
 
 
-
-/*const closeByOverlay = (evt, popup) => {            // Фунцкия закрытия по оверлэй
-    if (evt.target.classList.contains('popup')) {   // Соре этого реально нет в задании , там говорится только о кнопке крестика , я просто посматрел последний стрим  и там показывали пример с реализацией закрытия при клике по оверлею и решил запариться и чётко был уверен что так надо, отсюда и оверлей и всё остальное , буду внимательней +)
-      closePopup(popup);
-    }
-}
-popup.addEventListener ('click', function (evt) {
-    closeByOverlay(evt, popup )
-})*/
 
 
 
