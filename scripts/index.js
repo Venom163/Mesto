@@ -93,18 +93,18 @@ function handleProfileSubmit(evt) {
 
 
 function createCard(item) {
-  const templateEl = document.querySelector('#template-element').content;
-  const newElement = templateEl.querySelector('.element').cloneNode(true);
+  const templateElement = document.querySelector('#template-element').content;
+  const newElement = templateElement.querySelector('.element').cloneNode(true);
   const elementImage = newElement.querySelector('.element__img');
   const elementTitle = newElement.querySelector('.element__title');
   const elementLike = newElement.querySelector('.element__like');
-  const elementDel = newElement.querySelector('.element__delete');
+  const elementDelete = newElement.querySelector('.element__delete');
 
   elementTitle.textContent = item.name;
   elementImage.alt = item.name;
   elementImage.src = item.link;
 
-  elementDel.addEventListener('click', handleDeleteCard);
+  elementDelete.addEventListener('click', handleDeleteCard);
   elementLike.addEventListener('click', handleLikeCard);
   elementImage.addEventListener('click', () => handlePreviewImage(item.link, item.name));
 
