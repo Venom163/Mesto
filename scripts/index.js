@@ -11,10 +11,10 @@ const popupAdd = document.querySelector('.popup_card');
 const formAdd = popupAdd.querySelector('.popup__form_card');
 const inputPlace = popupAdd.querySelector('.popup__form-input_type_name');
 const inputUrl = popupAdd.querySelector('.popup__form-input_type_url');
-const closePopupAdd = document.querySelector('.popup__close_card');
+const closePopupAdd = document.querySelector('.popup__close_add');
 const addBtn = document.querySelector('.profile__add-button');
 
-const photoModal = document.querySelector('.popup__photo');
+const photoModal = document.querySelector('.popup_photo');
 const photoImage = photoModal.querySelector('.popup__image');
 const btnCloseModal = photoModal.querySelector('.popup__button');
 const altModal = photoModal.querySelector('.popup__sign');
